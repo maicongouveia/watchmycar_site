@@ -27,6 +27,9 @@
     <!-- Theme CSS -->
     <link href="css/new-age.css" rel="stylesheet">
 
+    <!-- Proprio CSS-->
+    <link href="css/estilo.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,11 +60,16 @@
                     <li>
                         <a class="page-scroll" href="#download">Download</a>
                     </li>
+                    <!--
                     <li>
                         <a class="page-scroll" href="#features">Notícias</a>
                     </li>
+                    -->
                     <li>
                         <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://app.watchmycar.com.br">Entrar</a>
                     </li>
                 </ul>
             </div>
@@ -87,8 +95,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <!--<img src="img/demo-screen-1.jpg" class="img-responsive" alt="">-->
-                                    WatchMyCar
+                                    <img src="img/Tela - Intro Aplicativo.jpg" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -118,8 +125,7 @@
                         <div class="device-mockup galaxy_s3 portrait black">
                             <div class="device">
                                 <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <!--<img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> -->
+                                    <img src="img/Tela - Intro Aplicativo.jpg" class="img-responsive" alt="" id='img-transicoes'>
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -142,7 +148,7 @@
                                 <div class="feature-item">
                                     <i class="icon-camera text-primary"></i>
                                     <h3>Foto do Motorista</h3>
-                                    <p class="text-muted">Saiba quem está conduzindo o seu veículo a qualquer momento.</p>
+                                    <p class="text-muted">Saiba quem está conduzindo o automóvel a qualquer momento.</p>
                                 </div>
                             </div>
                         </div>
@@ -151,19 +157,22 @@
                                 <div class="feature-item">
                                     <i class="icon-map text-primary"></i>
                                     <h3>Localização</h3>
-                                    <p class="text-muted">Tenha o histórico de rotas organizada por data e hora.</p>
+                                    <p class="text-muted">Tenha todo histórico de rotas rapidamente.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="icon-screen-smartphone text-primary"></i>
                                     <h3>Acesso Rápido</h3>
-                                    <p class="text-muted">Tenhas acesso a todas as informações do veículo pelo celular.</p>
+                                    <p class="text-muted">Tenhas acesso a todas as informações pelo celular.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll col-md-12">Use agora</a>
+                        </div>
                     </div>
-                    <a href="#download" class="btn btn-outline btn-xl page-scroll">Baixe agora</a>
+                    
                 </div>
             </div>
     </section>
@@ -173,10 +182,14 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Um novo conceito em monitoramento veicular!</h2>
-                    <p>Nosso aplicativo esta disponível em todas as plataformas!<br />Faça o download e inicie o processo de cadastro.</p>
+                    <p>Nosso aplicativo estará disponível em todas as plataformas!<br /><!-- Faça o download e inicie o processo de cadastro.--></p>
+                    <div class='badges'>
+                        <a href="http://app.watchmycar.com.br" class="badge-link"><img src="img/badge-web.png" style='border: 1px solid #ffffff; border-radius: 10px;'></a>
+                    </div>
+                    <p style='text-align: left; margin-left: 30px;margin-top: 50px;'>Em breve</p>
                     <div class="badges">
-                        <a class="badge-link" href="http://app.watchmycar.com.br"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" href="http://app.watchmycar.com.br"><img src="img/app-store-badge.svg" alt=""></a>
+                        <a href="#donwload" class="badge-link"><img src="img/google-play-badge.svg" class='img-desabilitada'></a>
+                        <a href="#donwload" class="badge-link"><img src="img/app-store-badge.svg" class='img-desabilitada'></a>
                     </div>
                 </div>
             </div>
@@ -187,7 +200,7 @@
         <div class="cta-content">
             <div class="container">
                 <h2>Não perca tempo.<br>Esteja conectado.</h2>
-                <a href="#donwload" class="btn btn-outline btn-xl page-scroll">Vamos começar</a>
+                <a href="#download" class="btn btn-outline btn-xl page-scroll">Vamos começar</a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -201,7 +214,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-11">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
@@ -231,6 +244,15 @@
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class='col-lg-1'>
+                    <div class='row' style='text-align:center;'>
+                        <a href='http://facebook.com/watchmycaroficial' target="_blank" class='icone-contato'><i class='fa fa-5x fa-facebook-square'></i></a>
+                        <br><br>
+                        <a href='#contact' class='icone-contato'><i class='fa fa-5x fa-envelope'></i></a>
+                        <br><br>
+                        <a href='#contact' class='icone-contato'><i class='fa fa-5x fa-phone'></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -264,6 +286,61 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
+
+    <!-- Rotação de Imagens -->
+    <script type="text/javascript">
+    /*
+        var imgs = [
+            "img/Tela - Intro Aplicativo.jpg",
+            "img/Tela - Escolha de Data da Rota.jpg",
+            "img/Tela - Principal.jpg",
+            "img/Tela - Rota.jpg",
+            "img/Tela - Rota.png",
+            "img/Ultimo Ponto.png"            
+        ]
+
+        var cont = 0;
+
+        while(true){
+            if(cont>5){cont=0;}
+            setInterval(trocarImagem(imgs[cont]),3000);
+            cont++;
+
+        }
+
+        function trocarImagem(url){
+            document.getElementById('img-transicoes').setAttribute('src',url);
+        }
+
+        */
+        var imgs = [
+            "img/Tela - Principal.jpg",
+            "img/Tela - Escolha de Data da Rota.jpg",
+            "img/Tela - Rota.jpg",
+            "img/Tela - Rota.png",
+            "img/Ultimo Ponto.png",
+            "img/Tela - Intro Aplicativo.jpg"       
+        ]
+        var i = 0;
+        var id = 'img-transicoes'
+        // Intervalo em milissegundos (1s == 1000ms)
+        var milissegundos = 2500; // 5000 = 5 Segundos
+
+        // Executa a função a cada intervalo de tempo
+        var interval = setInterval(function(){
+
+          // Recebe o elemento
+          var img = document.getElementById(id);          
+          
+          // Seta o source da nova imagem
+          img.setAttribute('src', imgs[i]);
+
+          i++;
+
+          if(i == imgs.length){i=0;}
+          
+        }, milissegundos);
+    </script>
 
 </body>
 
