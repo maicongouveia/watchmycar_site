@@ -84,7 +84,7 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Um novo conceito em segurança veicular, fique mais conectado ao seu carro</h1>
+                            <h1>Um novo conceito em segurança veicular, seu carro mais conectado a você.</h1>
                             <a href="#funcionalidades" class="btn btn-outline btn-xl page-scroll">Conheça <span class='hidden-xs'>as funcionalidades</span></a>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Seu Email " id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -237,10 +237,9 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar Mensagem</button>
+                                
+                            <div class="col-lg-12 text-center" style="margin-top: 50px;">
+                                    <button id='btn' onclick="enviarEmail();" class="btn btn-xl">Enviar Mensagem</button>    
                             </div>
                         </div>
                     </form>
@@ -287,32 +286,14 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
 
+    <!-- Google Recaptcha API -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Envio de Email a partir do Contato -->
+    <script src='js/email.js'></script>
+
     <!-- Rotação de Imagens -->
     <script type="text/javascript">
-    /*
-        var imgs = [
-            "img/Tela - Intro Aplicativo.jpg",
-            "img/Tela - Escolha de Data da Rota.jpg",
-            "img/Tela - Principal.jpg",
-            "img/Tela - Rota.jpg",
-            "img/Tela - Rota.png",
-            "img/Ultimo Ponto.png"            
-        ]
-
-        var cont = 0;
-
-        while(true){
-            if(cont>5){cont=0;}
-            setInterval(trocarImagem(imgs[cont]),3000);
-            cont++;
-
-        }
-
-        function trocarImagem(url){
-            document.getElementById('img-transicoes').setAttribute('src',url);
-        }
-
-        */
         var imgs = [
             "img/Tela - Principal.jpg",
             "img/Tela - Escolha de Data da Rota.jpg",
