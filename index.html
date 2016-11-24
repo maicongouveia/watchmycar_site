@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -10,6 +10,9 @@
     <meta name="author" content="">
 
     <title>WatchMyCar</title>
+
+    <!-- Favicon Ico -->
+    <link rel="shortcut icon" href="img/icon.ico" >
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +54,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">WatchMyCar</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img scr='img/Logo Aplicativo.png'>WatchMyCar</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +68,7 @@
                     </li>
                     <!--
                     <li>
-                        <a class="page-scroll" href="#features">Notícias</a>
+                        <a class="page-scroll" href="#features">Blog</a>
                     </li>
                     -->
                     <li>
@@ -125,7 +128,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="device-container">
-                        <div class="device-mockup galaxy_s3 portrait black">
+                        <div class="device-mockup galaxy_s3 portrait black visible-lg">
                             <div class="device">
                                 <div class="screen">
                                     <img src="img/Tela - Intro Aplicativo.jpg" class="img-responsive" alt="" id='img-transicoes'>
@@ -240,16 +243,16 @@
                         </div>
                     </form>
                 </div>
-                <div class='col-lg-1 col-xs-12 col-sm-12'>
+                <div class='col-lg-1 col-xs-12 col-sm-12' id='icones'>
                     <div class='row' style='text-align:center;'>
-                        <a href='http://facebook.com/watchmycaroficial' target="_blank" class='icone-contato'><i class='fa fa-5x fa-facebook-square'></i></a>
-                        <a href='#contact' class='icone-contato'><i class='fa fa-5x fa-envelope'></i></a>
-                        <a href='#contact' class='icone-contato'><i class='fa fa-5x fa-phone'></i></a>
+                        <a href='http://facebook.com/watchmycaroficial' target="_blank" class='icone-contato' data-toggle="tooltip" data-placement="bottom" title="facebook.com/watchmycaroficial"><i class='fa fa-5x fa-facebook-square'></i></a>
+                        <a href='#icones' class='icone-contato' data-toggle="tooltip" data-placement="bottom" title="contato@watchmycar.com.br"><i class='fa fa-5x fa-envelope'></i></a>
+                        <a href='#icones' class='icone-contato' data-toggle="tooltip" data-placement="bottom" title="(11)97243*1309"><i class='fa fa-5x fa-phone'></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 
     <footer>
         <div class="container">
@@ -311,6 +314,11 @@
         }, milissegundos);
     </script>
 
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
 </body>
 
 </html>
